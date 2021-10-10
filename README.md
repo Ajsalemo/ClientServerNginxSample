@@ -7,6 +7,8 @@ A sample with a containerized React frontend that uses NGINX to call to a contai
  
 `/server` - Folder containing the Express project.
 
+`nginx/default.conf` is copied into `/etc/nginx/conf.d` during the image build and is what helps proxy requests between the client to the server for the API call to retrieve neighborhoods.
+
 Expected output is a list of neighborhoods as seen below.
 
 ### Usage
