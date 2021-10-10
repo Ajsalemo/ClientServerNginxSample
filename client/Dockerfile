@@ -9,7 +9,7 @@ COPY . /app
 RUN yarn build
 
 # Serve the application through NGINX
-FROM nginx:1.19.0-alpine
+FROM nginx:1.20-alpine
 # Override the default nginx.conf with ours 
 COPY /nginx/nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=node /app/build /usr/share/nginx/html

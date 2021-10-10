@@ -2,11 +2,10 @@ version: '3.8'
 
 services:
   client:
-    image: clientservernginxsample-client:latest
+    image: <YOUR CONTAINER REGISTRY>.azurecr.io/<YOUR IMAGE>:<YOUR TAG>
     ports:
       - "8080:8080"
-        
   server:
-    image: clientservernginxsample-server:latest
+    image: <YOUR CONTAINER REGISTRY>.azurecr.io/<YOUR IMAGE>:<YOUR TAG>
     ports:
       - "3000:3000"
