@@ -21,10 +21,10 @@ const apiController = router.get("/", (_, res) => {
       "Rockaway Park",
       "Maspeth",
     ];
-    console.log('Request received.')
+    console.log("Request received.");
     res.json(neighborhoods);
   } catch (error) {
-    console.error("An error has occurred: ", error);
+    console.error(error);
     next(error);
   }
 });

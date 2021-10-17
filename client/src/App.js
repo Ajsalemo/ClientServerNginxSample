@@ -24,7 +24,7 @@ function App() {
         </button>
         <div>
           <ul className="App-ul">
-            {neighborhoods && neighborhoods.length
+            {neighborhoods && neighborhoods.length > 0
               ? neighborhoods.map((neighborhood, i) => (
                   <li className="App-li" key={i}>
                     {neighborhood}
